@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Traductor de TCER</title>
+     
+    <!-- 
+    - favicon
+    -->
+    <link rel="shortcut icon" href="./icono.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+            <img src="./asset/images/Traductor de TCER P.jpg" alt="Logo de la marca">
+      </div>
+      <nav>
+         <ul class="nav-links">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+         </ul>            
+      </nav>
+
+<!---->        <a onclick="openNav()" class="menu" href="#"><img src="./asset/images/menu.svg" alt="" width="30"></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a href="#">Services</a>
+<!---->                <a href="#">Projects</a>
+<!---->                <a href="#">About</a>
+<!---->                <a href="#">Contact</a>
+<!---->            </div>
+<!---->        </div>
+
+  </header>
+    <main class="todo">
+      <div class="container">
+        <div class="card input-wrapper">
+          <div class="from">
+            <span class="heading">From :</span>
+            <div class="dropdown-container" id="input-language">
+              <div class="dropdown-toggle">
+                <ion-icon name="globe-outline"></ion-icon>
+                <span class="selected" data-value="auto">Auto Detect</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="dropdown-menu">
+                <li class="option active">DropDown Menu Item 1</li>
+                <li class="option">DropDown Menu Item 2</li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-area">
+            <textarea
+              id="input-text"
+              cols="30"
+              rows="10"
+              placeholder="Escriba su texto aquí"
+            ></textarea>
+            <div class="chars"><span id="input-chars">0</span> / 5000</div>
+          </div>
+          <div class="card-bottom">
+            <p>¡O elige tu documento!</p>
+            <label for="upload-document">
+              <span id="upload-title">Elija el archivo</span>
+              <ion-icon name="cloud-upload-outline"></ion-icon>
+              <input type="file" id="upload-document" hidden />
+            </label>
+          </div>
+        </div>
+  
+        <div class="center">
+          <div class="swap-position">
+            <ion-icon name="swap-horizontal-outline"></ion-icon>
+          </div>
+        </div>
+  
+        <div class="card output-wrapper">
+          <div class="to">
+            <span class="heading">To :</span>
+            <div class="dropdown-container" id="output-language">
+              <div class="dropdown-toggle">
+                <ion-icon name="globe-outline"></ion-icon>
+                <span class="selected" data-value="en">Englsih</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="dropdown-menu">
+                <li class="option active">DropDown Menu Item 1</li>
+                <li class="option">DropDown Menu Item 2</li>
+              </ul>
+            </div>
+          </div>
+          <textarea
+            id="output-text"
+            cols="30"
+            rows="10"
+            placeholder="El texto traducido aparecerá aquí"
+            disabled
+          ></textarea>
+          <div class="card-bottom">
+            <p>¡descargar como documento!</p>
+            <button id="download-btn">
+              <span>Descargar</span>
+              <ion-icon name="cloud-download-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="containerero footer-wrapper">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="./asset/images/Traductor de TCER P.jpg" alt="Company Logo" class="logo" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2022 by Company, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">1510 Raccoon Run, Seattle, Washington, 98133</p>
+            <p>
+              <a href="tel:206-9414-5674" class="footer-link">206-9414-5674</a>
+              <br />
+              <a href="mailto:info@company.com" class="footer-link"
+                >info@company.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Products</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Platform</a></li>
+            <li><a href="#" class="footer-link">Pricing</a></li>
+            <li><a href="#" class="footer-link">Add-ons</a></li>
+            <li><a href="#" class="footer-link">Awards</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">About Company</a></li>
+            <li><a href="#" class="footer-link">Our Team</a></li>
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Docs</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./asset/js/languages.js"></script>
+    <script src="./asset/js/script.js"></script>
+  </body>
+</html>
