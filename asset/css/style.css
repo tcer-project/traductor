@@ -9,6 +9,7 @@
   --footer-heading-color: #ffffff;
   --footer-link-color: #d3d4d6;
   --footer-link-hover-color: #c8b568;
+  --section-padding: 100px;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -627,8 +628,8 @@ a {
 }
 
 .contenido-slider:nth-child(2){
-  background: #111116;
-  color: #fff;
+  background: white;
+  color: black;
 }
 
 .contenido-slider:nth-child(3){
@@ -693,16 +694,19 @@ a {
   }
 
 }
-
-.inner{
-  padding-top: 20px;
+.inner { padding-block-start: calc(var(--section-padding) + 60px); 
+  background-color: white;
+  padding-bottom: 100px;
 }
+
+
 
 .headerr{
   text-align: center;
   color: #111116;
   padding: 1rem;
   position: relative;
+  font-size: 13px;
 }
 
 .container3{
@@ -718,7 +722,7 @@ a {
 
 .skill-box{
   padding: 1rem;
-  color: #ddd;
+  color: #111116;
   cursor: pointer;
 }
 
@@ -734,15 +738,13 @@ a {
   width: 90px;
   height: 90px;
   position: relative;
-  border-radius: 45px;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .skill-title h3{
-  color: #111116;
+  color: #1b3039;
   margin: 0.5rem;
 }
 
@@ -756,4 +758,83 @@ a {
     padding: 2rem 50pxf;
   } 
   
+}
+
+.banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-container .banner{
+  background:linear-gradient(-55deg, #202020 29%, #111116 29.1%, #202020 68%, #111116 68.1%);
+  border-radius: 5px;
+  margin:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 10px #0005;
+  overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+  flex:1 1 250px;
+  padding:15px;
+  text-align: center;
+}
+
+.banner-container .banner .shoe img{
+  width:80%;
+}
+
+.banner-container .banner .content{
+  flex:1 1 250px;
+  text-align: center;
+  padding:10px;
+  text-transform: uppercase;
+}
+
+.banner-container .banner .content span{
+  color:#eee;
+  font-size: 25px;
+}
+
+.banner-container .banner .content h3{
+  color:#fff;
+  font-size: 40px;
+}
+
+.banner-container .banner .content p{
+  color:#eee;
+  font-size: 20px;
+  padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+  display: block;
+  height:40px;
+  width:150px;
+  line-height: 40px;
+  background: #fff;
+  color:#111116;
+  margin:5px auto;
+  text-decoration: none;
+}
+
+.banner-container .banner .women{
+  position: relative;
+  bottom: -33px;
+  padding:10px;
+  flex:1 1 250px;
+}
+
+.banner-container .banner .women img{
+  width:100%;
+}
+
+@media (max-width:768px){
+  .banner-container .banner .women{
+      display: none;
+  }
 }
