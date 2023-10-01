@@ -838,3 +838,11 @@ a {
       display: none;
   }
 }
+
+.trabajando{
+  background-color: white;
+}
+
+.error{
+  padding-top: 150px;
+}
