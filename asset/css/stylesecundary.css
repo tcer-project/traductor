@@ -590,7 +590,7 @@ ul {
     }
 
     .menu__item--show{
-        background-color: var(--background);
+        background-color: #fdfdfd;
     }
 
 
@@ -601,7 +601,7 @@ ul {
         top: 70px;
         bottom: 0;
         right: 0;
-        background-color: #000;
+        background-color: #fdfdfd;
         overflow-y: auto;
         display: grid;
         grid-auto-rows: max-content;
