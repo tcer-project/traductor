@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
   <link rel="stylesheet" href="./asset/css/style.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
   <title>Traductor de TCER | El mejor traductor del mundo</title>
      
     <!-- 
@@ -34,7 +35,7 @@
     <nav class="menu">
       <section class="menu__container">
           <div class="logo">
-              <img src="asset/images/translator.png" alt="Logo de la marca">
+              <img src="asset/images/translator.webp" alt="Logo de la marca">
           </div>
 
           <ul class="menu__links">
@@ -58,7 +59,7 @@
                 <a href="https://traductor.tcer.com.do/" class="menu__link">Documentation</a>
               </li>
               <!--<li class="menu__item  menu__item--show">
-                  <!-<a href="#" >Recursos  <img src="asset/images/arrow.png" class="menu__arrow"></a>--
+                  <a href="#" >Recursos  <img src="asset/images/arrow.png" class="menu__arrow"></a>
                   <samp class="menu__link">Recursos <img src="asset/images/arrow.png" class="menu__arrow"></samp>
   
                   <ul class="menu__nesting">
@@ -83,9 +84,12 @@
       </section>
 
   </nav>
+  <div class="texto">
+    <h1>"Welcome to the world of translation! Discover, connect, understand."</h1>
+  </div>
     <main class="todo">
       <div class="container">
-        <div class="card input-wrapper">
+        <div class="card input-wrapper cardo1">
           <div class="from">
             <span class="heading">From :</span>
             <div class="dropdown-container" id="input-language">
@@ -101,13 +105,13 @@
             </div>
           </div>
           <div class="text-area">
-            <textarea
+            <textarea maxlength="5000"
               id="input-text"
               cols="30"
               rows="10"
               placeholder="Type or Paste your text here"
             ></textarea>
-            <!--<div class="chars"><span id="input-chars">0</span> / 5000</div>-->
+            <div class="chars">5000 / <span id="input-chars"></span></div>
           </div>
           <div class="card-bottom">
             <p>Or choose your document!</p>
@@ -125,7 +129,7 @@
           </div>
         </div>
   
-        <div class="card output-wrapper">
+        <div class="card output-wrapper cardo2">
           <div class="to">
             <span class="heading">To :</span>
             <div class="dropdown-container" id="output-language">
@@ -157,211 +161,52 @@
         </div>
       </div>
     </main>
-    <section class="opinion">
-      <div class="testimonials-section">
-	
-        <!-- Section Header Starts -->
-        <header class="section-header">
-          <!--<h1>What Clients Say</h1>-->
-        </header>
-        <!-- Section Header Ends -->
-      
-        <!-- Owl Carousel Slider Starts -->
-        <div class="owl-carousel owl-theme testimonials-container">
-          <!-- Item1 Starts -->
-            <div class="item testimonial-card">
-              <main class="test-card-body">
-                <div class="quote">
-                  <i class="fa fa-quote-left"></i>
-                  <h2>TCER Translator</h2>
-                </div>
-                <p>Como viajero frecuente esta herramienta me ha ayudado a comunicarme en todos lados.</p>
-                <div class="ratings">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </main>
-              <div class="profile">
-                <div class="profile-image">
-                  <img src="./asset/images/Traductor de TCER P.jpg" alt="Logo del traductor para las opiniones">
-                </div>
-                <div class="profile-desc">
-                  <span>David Johnson</span>
-                  <span>Usuario</span>
-                </div>
-              </div>
-            </div>
-            <!-- Item1 Ends -->
-      
-            <!-- Item2 Starts -->
-            <div class="item testimonial-card">
-              <main class="test-card-body">
-                <div class="quote">
-                  <i class="fa fa-quote-left"></i>
-                  <h2>TCER Translator</h2>
-                </div>
-                <p>Soy estudiante, y este traductor es muy útil para hacer mis investigaciones más extensas y con diversas fuentes.</p>
-                <div class="ratings">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </main>
-              <div class="profile">
-                <div class="profile-image">
-                  <img src="./asset/images/Traductor de TCER P.jpg" alt="Logo del traductor para las opiniones">
-                </div>
-                <div class="profile-desc">
-                  <span>Emily Smith</span>
-                  <span>Usuario</span>
-                </div>
-              </div>
-            </div>
-            <!-- Item2 Ends -->
-
-            <div class="item testimonial-card">
-              <main class="test-card-body">
-                <div class="quote">
-                  <i class="fa fa-quote-left"></i>
-                  <h2>TCER Translator</h2>
-                </div>
-                <p>Este traductor me ha facilitado conocer a gente de todo el mundo sin importar la barrera del idioma.</p>
-                <div class="ratings">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </main>
-              <div class="profile">
-                <div class="profile-image">
-                  <img src="./asset/images/Traductor de TCER P.jpg" alt="Logo del traductor para las opiniones">
-                </div>
-                <div class="profile-desc">
-                  <span>Michael Brown</span>
-                  <span>Usuario</span>
-                </div>
-              </div>
-            </div>
-            <!-- Item3 Starts -->
-            <div class="item testimonial-card">
-              <main class="test-card-body">
-                <div class="quote">
-                  <i class="fa fa-quote-left"></i>
-                  <h2>TCER Translator</h2>
-                </div>
-                <p>Soy una persona que le encantan las demás culturas y nuevos idiomas, TCER Translator ha sido una herramienta de gran utilidad en mis días de estudio.</p>
-                <div class="ratings">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </main>
-              <div class="profile">
-                <div class="profile-image">
-                  <img src="./asset/images/Traductor de TCER P.jpg" alt="Logo del traductor para las opiniones">
-                </div>
-                <div class="profile-desc">
-                  <span>Jennifer Davis</span>
-                  <span>Usuario</span>
-                </div>
-              </div>
-            </div>
-            <!-- Item4 Starts -->
-
-            <!-- Item5 Starts -->
-            <div class="item testimonial-card">
-              <main class="test-card-body">
-                <div class="quote">
-                  <i class="fa fa-quote-left"></i>
-                  <h2>TCER Translator</h2>
-                </div>
-                <p>Soy una estudiante, esta herramienta me ha facilitado la comunicación con amigos extranjeros. Me encanta su simpleza y eficiencia simplemente lo mejor.</p>
-                <div class="ratings">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </main>
-              <div class="profile">
-                <div class="profile-image">
-                  <img src="./asset/images/Traductor de TCER P.jpg" alt="Logo del traductor para las opiniones">
-                </div>
-                <div class="profile-desc">
-                  <span>Abigail Rodriguez</span>
-                  <span>Usuario</span>
-                </div>
-              </div>
-            </div>
-            <!-- Item5 Ends -->
-      
-            <!-- Item6 Starts -->
-            <div class="item testimonial-card">
-              <main class="test-card-body">
-                <div class="quote">
-                  <i class="fa fa-quote-left"></i>
-                  <h2>TCER Translator</h2>
-                </div>
-                <p>Este traductor me ayuda mantener la comunicación con mis conocidos, simplemente es el mejor y más por lo simple y eficiente a la hora de utilizarlo.</p>
-                <div class="ratings">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </main>
-              <div class="profile">
-                <div class="profile-image">
-                  <img src="./asset/images/Traductor de TCER P.jpg" alt="Logo del traductor para las opiniones">
-                </div>
-                <div class="profile-desc">
-                  <span>Alexander García</span>
-                  <span>Usuario</span>
-                </div>
-              </div>
-            </div>
-            <!-- Item6 Ends -->
-      
-          </div>
-        <!-- Owl Carousel Slider Ends -->
-      
+    <br>
+    <br>
+    <section class="infor">
+      <h1>TCER Translator</h1>
+      <div class="dates">
+        <div>
+          <img src="./asset/images/archivo.png" alt="">
+          <p style="color: #009efa">TXT FILES</p>
+        </div>
+        <hr>
+        <div>
+          <img src="./asset/images/idioma.png" alt="">
+          <p style="color: #99DB10">5000 CHARACTER LIMIT</p>
+        </div>
+        <hr>
+        <div>
+          <img src="./asset/images/limite-de-velocidad.png" alt="">
+          <p style="color: #009efa">58 LANGUAGES</p>
+        </div>
       </div>
     </section>
+    <br>
+    <br>
+    <div class="logo3">
+      <img src="./asset/images/translator.webp" alt="">
+      <p>TCER technology</p>
+    </div>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="containerero footer-wrapper">
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img src="./asset/images/Traductor de TCER Black.webp" alt="Company Logo" class="logo2" alt="Logo del traductor de TCER negativo">
+            <img src="./asset/images/translator.webp" alt="Company Logo" class="logo" width="150"/>
           </a>
 
 
           <ul class="social-links">
             <li>
-              <a href="https://www.instagram.com/traductor_de_tcer/" class="footer-link">
-                <img src="./asset/images/instagram.png" width="25" alt="Logo de instagram">
-              </a>
-            </li>
-            <li>
-              <a href="https://tcer.com.do" class="footer-link">
-                <img src="./asset/images/iconotcer.png" width="25" alt="Icono de TCER Company">
+              <a href="https://www.instagram.com/tcer_translator/" class="footer-link">
+                <img src="./asset/images/instagram.png" width="25">
               </a>
             </li>
           </ul>
           <br>
           <p class="copyright">
-            Copyright &copy; 2023 by TCER, TCER Translator.
+            Copyright &copy; 2024 by TCER, TCER Translator.
           </p>
         </div>
 
@@ -369,21 +214,19 @@
         <nav class="nav-col">
           <p class="footer-heading">Web Link</p>
           <ul class="footer-nav">
-            <li><a href="./asset/html/Por qué Traductor de TCER.html" class="footer-link">Quality never seen before</a></li>
+            <li><a href="./asset/html/Por qué Traductor de TCER.html" class="footer-link">Why TCER Translator ?</a></li>
             <li><a href="./asset/html/TCER Translator Ventajas.html" class="footer-link">Advantages</a></li>
+            <li><a href="https://tcer.com.do/" class="footer-link">TCER</a></li>
           </ul>
         </nav>
 
         <div class="address-col">
-          <p class="footer-heading">Resource</p>
+          <p class="footer-heading">Resources</p>
           <address class="contacts">
             <p>
-             <a href="https://traductor.tcer.com.do/" class="footer-link">Terms and Conditions</a>
+             <a href="#" class="footer-link">Terms and Conditions</a>
             </p>
             <br>
-            <p>
-              <a href="https://traductor.tcer.com.do/" class="footer-link">Privacy Policy</a>
-            </p>
           </address>
         </div>
 
@@ -399,17 +242,19 @@
           <p class="footer-heading">Technology</p>
           <address class="contacts">
             <p>
-              <img src="./asset/images/logolargo.png" width="100" alt="Banner de TCER Company">
+              <img src="./asset/images/TCER-TRADUCTOR.webp" width="100">
             </p>
           </address>
         </div>
 
       </div>
-    </footer>
+  </footer>
 
     
 <!--   *****   JQuery Link   *****   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
 <!--   *****   Owl Carousel js Link  *****  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
