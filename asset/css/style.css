@@ -399,7 +399,6 @@ body.dark {
 }
 .container .center {
   position: relative;
-  top: 70px;
   z-index: 300;
 }
 .swap-position {
