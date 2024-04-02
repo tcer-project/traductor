@@ -252,7 +252,7 @@ anime({
 
 anime({
   targets: '.center',
-  translateY: '50px',
+  translateY: '65px',
   easing: 'easeInOutQuad',
   duration: 1000,
   loop: false
